@@ -1,8 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the recipes index.")
+    return render(request, 'recipes/pages/home.html', context={
+        'name': 'Anaê Ross',
+    })
 
 
 def about(request):
@@ -11,5 +14,6 @@ def about(request):
 
 def contact(request):
     return HttpResponse("This is my contact page, send us an email")
+
 
 
