@@ -1,0 +1,30 @@
+Python -m venv venv (criação de ambiente virtual)
+.\venv\Scripts\activate ( ativar o ambiente virtual)
+Set-ExecutionPolicy Unrestricted -Scope Process (dar permissao para executar comando acima)
+
+Desativar ambiente virtual = deactivate
+
+python --version
+
+pip -V
+
+pip install django 
+
+django-admin --version
+
+django-admin help (mostra todos os comandos do django)
+
+Criar projeto com django 
+
+django-admin startproject NomedoProjeto . (ponto para criar na pasta raiz)
+
+python manage.py runserver (roda o servidor para visualizar a aplicação)
+
+Escrever no models.py as tabelas/colunas a serem criadas para a aplicação 
+	Criar as migrações do model = python manage.py makemigrations
+	Comando para aplicar as alterações do model dados no makemigrations = python manage.py migrate
+	
+Acessar painel admin = localhost / admin
+	Criar super usuário - python manager.py createsuperuser (fornecer nome, email e senha)
+	
+	
